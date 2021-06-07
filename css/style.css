@@ -1,0 +1,429 @@
+@charset "UTF-8";
+.tr-btn {
+  background-color: transparent !important;
+  border: 1px solid #000;
+}
+
+.border-btn {
+  width: 240px !important;
+  height: 55px !important;
+  font-size: 18px;
+}
+.border-btn:after, .border-btn:before {
+  display: flex;
+  position: absolute;
+}
+.border-btn:after {
+  content: url(../img/header/bot.svg);
+  top: 34px;
+}
+.border-btn:before {
+  content: url(../img/header/top.svg);
+  bottom: 29px;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.line {
+  height: 1px;
+  background-color: #000;
+  margin-top: 140px !important;
+  margin-bottom: 30px !important;
+}
+
+.fff {
+  background-color: #fff !important;
+}
+
+.fff-c {
+  color: #fff !important;
+}
+
+.m60 {
+  margin: 60px 0;
+}
+
+.arrow:after {
+  content: url(../img/header/arrow.svg);
+  display: flex;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+.aic {
+  display: flex;
+  align-items: center;
+}
+
+.hbg {
+  background-color: #e5e5e5 !important;
+}
+
+.prof-img:after {
+  content: url(../img/profile/2.svg);
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  display: flex;
+  left: 37%;
+}
+
+/* fonts */
+@font-face {
+  font-family: "DIN Pro Cond";
+  src: url("../fonts/DINPro-CondensedRegular.eot");
+  src: local("☺️"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedRegular.woff") format("woff"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedRegular.ttf") format("truetype"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Pro Cond";
+  src: url("https://elliinee.github.io/cases/fonts/DINPro-CondensedMedium.eot");
+  src: local("☺️"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedMedium.woff") format("woff"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedMedium.ttf") format("truetype"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedMedium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Pro Cond";
+  src: url("https://elliinee.github.io/cases/fonts/DINPro-CondensedBold.eot");
+  src: local("☺️"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedBold.woff") format("woff"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedBold.ttf") format("truetype"), url("https://elliinee.github.io/cases/fonts/DINPro-CondensedBold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/* fonts end */
+body {
+  font-family: "DIN Pro Cond";
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.header__content {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__content__block {
+  display: flex;
+}
+.header__content__block__nav {
+  display: flex;
+}
+.header__content__block__nav__item {
+  margin-right: 30px;
+  position: relative;
+}
+.header__content__block__nav__item:last-child {
+  margin-right: 0;
+}
+.header__content__block__nav__item__link {
+  text-transform: none;
+  color: #000;
+}
+.header__content__block__item__btn, .header__content__block__item__btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.header__content__block__item__btn {
+  width: 172px;
+  height: 41px;
+  background-color: #ff6620;
+  color: #fff;
+  margin-right: 20px;
+  position: relative;
+}
+.header__content__block__item__btn2 {
+  width: 118px;
+  height: 39px;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.header__content__block__item__img {
+  margin-right: 6px;
+}
+.header__content__block__item__name {
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  width: -webkit-min-content;
+  width: min-content;
+}
+.header__content__block__item__balance {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header__content__block__item__plus {
+  margin-left: 20px;
+}
+.header__bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 629px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__bg__title {
+  font-size: 72px;
+  color: #fff;
+  font-weight: bold;
+}
+.header__bg__sub {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cases__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cases__content__card {
+  flex: 0 0 23%;
+  margin-bottom: 60px;
+  border-radius: 5px 10px 10px 10px;
+  margin-right: 20px;
+}
+.cases__content__card:nth-child(4n) {
+  margin-right: 0;
+}
+.cases__content__card__img > img {
+  width: 100%;
+}
+.cases__content__card__bottom {
+  background-color: #ece8e1;
+  padding: 0 20px 20px;
+}
+.cases__content__card__bottom__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.cases__content__card__bottom__btn {
+  width: 132px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #ff6620;
+  border-radius: 2px;
+  margin-top: 30px !important;
+  margin: 0 auto;
+}
+
+.live {
+  background-image: url(../img/main/bg.svg);
+  background-size: cover;
+  display: flex;
+  padding-bottom: 186px;
+}
+.live__content__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.live__content__block__card {
+  background-color: #212121;
+  border-radius: 5px;
+  padding: 18px 20px;
+  width: 21%;
+}
+.live__content__block__card__title {
+  color: #ece8e1;
+  font-size: 24px;
+  font-weight: bold;
+}
+.live__content__block__card__number {
+  color: #ece8e1;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.case__content__block {
+  background-color: #131313;
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+}
+.case__content__block:after {
+  content: "";
+  display: flex;
+  width: 3px;
+  height: 95%;
+  background-color: #ff6620;
+  position: absolute;
+  top: 0;
+  transform: translate(50%, 8px);
+  right: 52%;
+}
+.case__content__block__img {
+  width: 23%;
+}
+.case__content__btns {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.case__content__btns__open {
+  position: relative;
+  width: 192px;
+  height: 55px;
+  background-color: #ff6620;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.case__content__btns__plus {
+  width: 229px;
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid #ece8e1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.box__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box__content__card__bottom {
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.box__content__card__bottom__text {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.hello__content {
+  display: flex;
+  align-items: center;
+}
+.hello__content__block {
+  margin-right: 110px;
+  position: relative;
+}
+.hello__content__block__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.hello__content__block__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.hello__content__block__text__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.hello__content__block__text__item:last-child {
+  margin-bottom: 0;
+}
+.hello__content__block__text__item__title {
+  margin-right: 15px;
+  flex: 33%;
+}
+.hello__content__block__text__item__input {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 3px 10px;
+  outline: none;
+  font-size: 12px;
+}
+.hello__content__block__text__item__input::placeholder {
+  font-family: "DIN Pro Cond";
+  font-size: 14px;
+}
+.hello__content__block__text__item__edit {
+  color: #ff6620;
+  text-decoration: underline;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.bag__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donate__content__text {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 140px;
+  background-color: #004049;
+  padding: 30px 0;
+}
+.footer__content__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content__block__link, .footer__content__block__text {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
